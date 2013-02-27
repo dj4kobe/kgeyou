@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MusicInterfaceComponent/MusicInterfaceComponent.iml" filepath="$PROJECT_DIR$/MusicInterfaceComponent/MusicInterfaceComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kgeyou.iml" filepath="$PROJECT_DIR$/kgeyou.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavenLib/mavenLib.iml" filepath="$PROJECT_DIR$/mavenLib/mavenLib.iml" />
+    </modules>
+  </component>
+</project>
+
