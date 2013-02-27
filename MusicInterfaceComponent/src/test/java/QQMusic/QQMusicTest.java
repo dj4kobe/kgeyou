@@ -37,17 +37,23 @@ public class QQMusicTest {
 
             HttpResponse response = httpClient.execute(httpGet);
             HttpEntity httpEntity = response.getEntity();
+            StringBuffer responseSb = new StringBuffer("");
             if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                 byte[] bytes = new byte[1024];
                 InputStream responseStream = httpEntity.getContent();
                 InputStreamReader responseStreamReader = new InputStreamReader(responseStream, "GBK");
                 BufferedReader bufferedReader = new BufferedReader(responseStreamReader);
                 String lineContent = "";
-                StringBuffer sb = new StringBuffer("");
+
                 while((lineContent = bufferedReader.readLine()) != null){
-                    sb.append(lineContent);
+                    responseSb.append(lineContent);
                 }
-                System.out.println("responseString:" + sb.toString());
+                System.out.println("responseString:" + responseSb.toString());
+            }
+            String responseStr = responseSb.toString();
+
+            if(responseStr.equals("")){
+
             }
 
         } catch (UnsupportedEncodingException e) {
